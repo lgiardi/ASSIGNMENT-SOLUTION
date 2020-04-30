@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Navigation from './navigation';
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 import TestoInput from './UserInput/TestoInput';
@@ -37,6 +37,7 @@ class App extends Component {
           <li>Add two-way-binding to your input (in UserInput) to also display the starting username</li>
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
         </ol><div>
+        <Navigation />
         <UserInput 
           changed={this.usernameChangedHandler} 
           currentName={this.state.username} /></div>
