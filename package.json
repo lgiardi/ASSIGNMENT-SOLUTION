@@ -1,0 +1,25 @@
+{
+  "homepage": "http://lgiardi.github.io/ASSIGNMENT-SOLUTION/",
+  "name": "react-complete-guide",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "-": "0.0.1",
+    "g": "^2.0.1",
+    "npm": "^6.14.4",
+    "react": "^16.0.0-rc.3",
+    "react-dom": "^16.0.0-rc.3",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
