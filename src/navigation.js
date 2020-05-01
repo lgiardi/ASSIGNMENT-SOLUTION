@@ -1,28 +1,18 @@
-import React, { Component } from 'react';
+import React from "react";
+
+const Navigation = (props) => {
 
 
-
-class Navigation extends Component {
-
-
-  render() {
-
-    const sections = ['Home' , 'About' , 'Contact', 'Footer','Header'];
-    const navLinks = sections.map( section => {
-
-        return (
-            <li><a href={ '#' + section }>{section}</a></li>
-        )
-    
-        
- } );
+  const sections = ['Home' , 'About' , 'Contact', 'Footer','Header'];
+  const navLinks = sections.map((section) => {
     return (
-     <nav><ul>
-        {navLinks}
-        </ul>
-     </nav>
+      <li>
+        <a href={"#" + section}>{section}</a>
+      </li>
     );
-  }
-}
+  });
+
+  return <ul>{navLinks}</ul>;
+};
 
 export default Navigation;
