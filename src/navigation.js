@@ -1,9 +1,7 @@
 import React from "react";
 
 const Navigation = (props) => {
-
-
-  const sections = ['Home' , 'About' , 'Contact', 'Footer','Header'];
+  const sections = ["Home", "About", "Contact", "Footer", "Header"];
   const navLinks = sections.map((section) => {
     return (
       <li>
